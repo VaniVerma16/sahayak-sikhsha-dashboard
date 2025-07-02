@@ -174,14 +174,16 @@ export function Sidebar({
       </div>
 
       {/* Mobile toggle button */}
-      <Button
-        variant="outline"
-        size="icon"
-        onClick={onToggle}
-        className="fixed top-4 left-4 z-60 lg:hidden shadow-lg"
-      >
-        <Menu className="w-5 h-5" />
-      </Button>
+      {!isOpen && (
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={onToggle}
+          className="fixed top-4 left-4 z-60 lg:hidden shadow-lg"
+        >
+          <Menu className="w-5 h-5" />
+        </Button>
+      )}
     </>
   );
 }

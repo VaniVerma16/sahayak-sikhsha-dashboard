@@ -35,20 +35,6 @@ const Index = () => {
                 <p className="text-sm opacity-90">Your intelligent teaching assistant for multi-grade classrooms</p>
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-4 text-sm">
-              <div className="flex items-center space-x-1">
-                <Users className="w-4 h-4" />
-                <span>50K+ Teachers</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <BookOpen className="w-4 h-4" />
-                <span>500K+ Contents</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <Award className="w-4 h-4" />
-                <span>Education Award 2024</span>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -88,7 +74,7 @@ const Index = () => {
             </div>
           </div>
         ) : (
-          <WorkspaceArea activeTab={activeTab} />
+          <WorkspaceArea activeTab={activeTab} currentLanguage={currentLanguage} />
         )}
 
         {/* Usage Stats Footer */}
