@@ -11,7 +11,6 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState("story");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState<Language>("en");
-  const [showMockup, setShowMockup] = useState(false);
 
   const t = translations[currentLanguage];
 
@@ -47,37 +46,12 @@ const Index = () => {
               <Badge variant="secondary" className="bg-accent text-accent-foreground">
                 Live Preview
               </Badge>
-              <p className="text-sm text-muted-foreground">
-                Experience AI-powered worksheet generation
-              </p>
             </div>
-            <Button 
-              variant={showMockup ? "outline" : "warm"} 
-              onClick={() => setShowMockup(!showMockup)}
-            >
-              {showMockup ? "Back to Tools" : "View Worksheet Preview"}
-            </Button>
           </div>
         </div>
 
         {/* Main Content */}
-        {showMockup ? (
-          <div className="flex-1 overflow-auto">
-            <div className="p-6">
-              <div className="mb-6 text-center">
-                <h2 className="text-3xl font-bold text-foreground mb-2">
-                  AI Worksheet Generation Preview
-                </h2>
-                <p className="text-muted-foreground">
-                  Upload any textbook page and watch AI create customized worksheets instantly
-                </p>
-              </div>
-              <WorksheetMockup />
-            </div>
-          </div>
-        ) : (
-          <WorkspaceArea activeTab={activeTab} currentLanguage={currentLanguage} />
-        )}
+        <WorkspaceArea activeTab={activeTab} currentLanguage={currentLanguage} />
 
         {/* Usage Stats Footer */}
         <div className="p-4 bg-muted/30 border-t border-border">

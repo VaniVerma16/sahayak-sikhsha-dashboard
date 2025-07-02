@@ -2,7 +2,11 @@ export const contentData = {
   en: {
     story: {
       title: "The Honest Woodcutter",
-      content: `Once upon a time, there lived a poor woodcutter named Raman in a small village near a beautiful forest. Every day, he would go to the forest with his old but trusty axe to cut wood and sell it in the market to feed his family.
+      content: `# The Honest Woodcutter
+
+<!-- ![Story Illustration](https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80) -->
+
+Once upon a time, there lived a poor woodcutter named Raman in a small village near a beautiful forest. Every day, he would go to the forest with his old but trusty axe to cut wood and sell it in the market to feed his family.
 
 One sunny morning, while working near the river, Raman's axe slipped from his hands and fell into the deep, clear water. He sat by the riverbank and began to cry, for this was his only axe and without it, he could not work.
 
@@ -28,7 +32,9 @@ The goddess was so pleased with his honesty that she gave him all three axes. Ra
     },
     worksheet: {
       title: "Reading Comprehension: The Solar System",
-      content: `**Name:** _________________ **Date:** _________________
+      content: `# Worksheet: The Solar System
+
+**Name:** ________________   **Date:** ________________
 
 **Read the passage and answer the questions:**
 
@@ -36,25 +42,40 @@ Our solar system has eight planets that orbit around the Sun. The Sun is a star 
 
 Earth is the only planet where we know life exists. It has water, air, and the right temperature for plants, animals, and humans to live. Mars is called the "Red Planet" because of its reddish color. Jupiter is the largest planet in our solar system.
 
-**Questions:**
+---
 
-1. How many planets are in our solar system? _______________
+## Questions
 
-2. Name the four inner planets:
-   a) _____________ b) _____________ c) _____________ d) _____________
+1. **How many planets are in our solar system?**  
+   __________________________
+2. **Name the four inner planets:**
+   - a) _____________
+   - b) _____________
+   - c) _____________
+   - d) _____________
+3. **Why is Earth special?**  
+   __________________________
+4. **Which planet is called the "Red Planet"?**  
+   __________________________
+5. **What is the largest planet in our solar system?**  
+   __________________________
 
-3. Why is Earth special? _________________________________
+### True or False
+- The Sun is a planet. ____
+- There are nine planets in our solar system. ____
+- Earth has water and air. ____
 
-4. Which planet is called the "Red Planet"? _______________
+---
 
-5. What is the largest planet in our solar system? _______________
+**Draw and label the Sun and three planets below:**
 
-**True or False:**
-6. The Sun is a planet. _______
-7. There are nine planets in our solar system. _______
-8. Earth has water and air. _______
+---
 
-**Draw and label the Sun and three planets:**`,
+|   |   |   |
+|---|---|---|
+|   |   |   |
+|   |   |   |
+`,
       grade: "Grade 4",
       subject: "Science"
     },
@@ -148,59 +169,59 @@ Remember: Patience and repetition are key. Allow students to explore and make mi
     },
     lesson: {
       title: "Plant Life Cycle - 45 Minute Lesson Plan",
-      content: `**Subject:** Science - Plant Life Cycle
-**Grade:** 4
-**Duration:** 45 minutes
-**Learning Objective:** Students will understand the stages of a plant's life cycle
+      content: `# Lesson Plan: Plant Life Cycle
 
-**Materials Needed:**
+**Subject:** Science  
+**Grade:** 4  
+**Duration:** 45 minutes
+
+## Learning Objective
+- Students will understand the stages of a plant's life cycle
+
+## Materials Needed
 - Bean seeds, soil, small pots
 - Chart paper and markers
 - Plant life cycle diagram
 - Magnifying glasses
 
-**Lesson Structure:**
+## Lesson Structure
 
-**Introduction (10 minutes)**
+### Introduction (10 minutes)
 - Show students a mature plant and seeds
 - Ask: "How do you think this big plant came from this tiny seed?"
 - Introduce the concept of life cycles
 
-**Main Activity (25 minutes)**
+### Main Activity (25 minutes)
 
-*Part 1: Seed Exploration (10 minutes)*
+**Part 1: Seed Exploration (10 minutes)**
 - Give each student a bean seed
 - Use magnifying glasses to observe
 - Discuss what's inside a seed
 
-*Part 2: Life Cycle Stages (15 minutes)*
+**Part 2: Life Cycle Stages (15 minutes)**
 - Present the four main stages:
   1. **Seed** - Contains baby plant and food
   2. **Germination** - Seed begins to grow
   3. **Seedling** - Young plant with first leaves
   4. **Adult Plant** - Mature plant that makes new seeds
-
 - Students draw each stage in their notebooks
 - Plant bean seeds in pots for observation
 
-**Conclusion (10 minutes)**
+### Conclusion (10 minutes)
 - Review the four stages together
 - Students share one new thing they learned
 - Assign homework: Observe planted seeds daily
 
-**Assessment:**
+## Assessment
 - Check student drawings of life cycle stages
 - Listen to student explanations during discussion
 - Monitor daily observation journals
 
-**Extension Activities:**
+## Extension Activities
 - Create a class garden
 - Compare different plant life cycles
 - Research how plants help our environment
-
-**Homework:**
-- Draw and label a plant life cycle
-- Write one sentence about each stage`,
+`,
       grade: "Grade 4",
       subject: "Science"
     },
@@ -258,27 +279,15 @@ Emma smiled. She was learning that everything in the garden worked together like
   hi: {
     story: {
       title: "ईमानदार लकड़हारा",
-      content: `एक समय की बात है, एक छोटे से गांव में राम नाम का एक गरीब लकड़हारा रहता था। वह रोज जंगल जाकर लकड़ी काटता और बाजार में बेचकर अपने परिवार का पेट पालता था।
+      content: `उत्तर प्रदेश के एक छोटे से गाँव में राम नाम का एक गरीब लकड़हारा रहता था। वह रोज़ सुबह गंगा किनारे के जंगल में जाता, पेड़ काटता और लकड़ी बेचकर अपने परिवार का पालन-पोषण करता।
 
-एक दिन नदी के किनारे काम करते समय उसकी कुल्हाड़ी हाथ से फिसलकर गहरे पानी में गिर गई। राम बहुत दुखी हुआ और रोने लगा क्योंकि यह उसकी एकमात्र कुल्हाड़ी थी।
+एक दिन, जब वह गंगा किनारे पेड़ काट रहा था, उसकी कुल्हाड़ी हाथ से फिसलकर नदी में गिर गई। राम बहुत परेशान हो गया और किनारे बैठकर भगवान से प्रार्थना करने लगा।
 
-तभी पानी में से एक देवी प्रकट हुई। "क्यों रो रहे हो, लकड़हारे?" उन्होंने पूछा।
+तभी गंगा मैया प्रकट हुईं और बोलीं, "बेटा, क्यों दुखी हो?" राम ने पूरी बात बताई। गंगा मैया ने पहले सोने की कुल्हाड़ी निकाली और पूछा, "क्या यह तुम्हारी है?" राम ने मना कर दिया। फिर चांदी की कुल्हाड़ी दिखाई, राम ने फिर मना किया। अंत में, गंगा मैया ने उसकी पुरानी लोहे की कुल्हाड़ी निकाली। राम ने खुशी से कहा, "हाँ, यही मेरी कुल्हाड़ी है।"
 
-राम ने अपनी समस्या बताई। देवी ने पानी में डुबकी लगाई और एक सोने की कुल्हाड़ी लेकर आई। "क्या यह तुम्हारी कुल्हाड़ी है?"
+राम की ईमानदारी से गंगा मैया बहुत प्रसन्न हुईं और उसे तीनों कुल्हाड़ियाँ दे दीं। राम अपने गाँव लौटा और सबको बताया कि सच्चाई और ईमानदारी का फल हमेशा अच्छा मिलता है।
 
-"नहीं, यह मेरी नहीं है," राम ने ईमानदारी से कहा।
-
-देवी फिर गई और चांदी की कुल्हाड़ी लाई। "क्या यह तुम्हारी है?"
-
-"नहीं, यह भी मेरी नहीं है," राम ने कहा।
-
-अंत में देवी उसकी पुरानी लोहे की कुल्हाड़ी लेकर आई। "क्या यह तुम्हारी है?"
-
-"हां! यह मेरी कुल्हाड़ी है!" राम खुशी से बोला।
-
-देवी राम की ईमानदारी से बहुत प्रसन्न हुई और उसे तीनों कुल्हाड़ियां दे दीं। राम अमीर बनकर घर गया।
-
-**शिक्षा:** ईमानदारी सबसे अच्छी नीति है।`,
+**शिक्षा:** सच्चाई और ईमानदारी सबसे बड़ी पूँजी है।`,
       grade: "कक्षा 3-5",
       subject: "नैतिक शिक्षा"
     },
@@ -288,7 +297,7 @@ Emma smiled. She was learning that everything in the garden worked together like
 
 **गद्यांश पढ़िए और प्रश्नों के उत्तर दीजिए:**
 
-हमारे सौर मंडल में आठ ग्रह हैं जो सूर्य के चारों ओर घूमते हैं। सूर्य एक तारा है जो हमें प्रकाश और गर्मी देता है। सूर्य के सबसे पास के ग्रह हैं बुध, शुक्र, पृथ्वी और मंगल। इन्हें आंतरिक ग्रह कहते हैं। बाहरी ग्रह हैं बृहस्पति, शनि, अरुण और वरुण।
+हमारे सौर मंडल में आठ ग्रह हैं जो सूर्य के चारों ओर घूमते हैं। सूर्य एक तारा है जो हमें प्रकाश और गर्मी देता है। सूर्य के सबसे पास के ग्रह हैं बुध, शुक्र, पृथ्वी और मंगल। यांना अंतर्गत ग्रह कहते हैं। बाहरी ग्रह हैं बृहस्पति, शनि, अरुण और वरुण।
 
 पृथ्वी एकमात्र ऐसा ग्रह है जहां जीवन है। यहां पानी, हवा और सही तापमान है जो पेड़-पौधों, जानवरों और इंसानों के लिए जरूरी है। मंगल को "लाल ग्रह" कहते हैं क्योंकि यह लाल दिखता है। बृहस्पति हमारे सौर मंडल का सबसे बड़ा ग्रह है।
 
@@ -310,7 +319,7 @@ Emma smiled. She was learning that everything in the garden worked together like
 7. हमारे सौर मंडल में नौ ग्रह हैं। _______
 8. पृथ्वी पर पानी और हवा है। _______
 
-**सूर्य और तीन ग्रहों का चित्र बनाकर नाम लिखिए:**`,
+**सूर्य और तीन ग्रहों का चित्र बनाकर नावे लिखिए:**`,
       grade: "कक्षा 4",
       subject: "विज्ञान"
     },
@@ -415,50 +424,50 @@ Emma smiled. She was learning that everything in the garden worked together like
 - पौधे के जीवन चक्र का आरेख
 - आवर्धक लेंस
 
-**पाठ संरचना:**
+**Lesson Structure:**
 
-**परिचय (10 मिनट)**
-- छात्रों को एक पूर्ण विकसित पौधा और बीज दिखाएं
-- पूछें: "आपको क्या लगता है कि यह बड़ा पौधा इस छोटे बीज से कैसे आया?"
-- जीवन चक्र की अवधारणा का परिचय दें
+**Introduction (10 minutes)**
+- Show students a mature plant and seeds
+- Ask: "How do you think this big plant came from this tiny seed?"
+- Introduce the concept of life cycles
 
-**मुख्य गतिविधि (25 मिनट)**
+**Main Activity (25 minutes)**
 
-*भाग 1: बीज अन्वेषण (10 मिनट)*
-- हर छात्र को एक राजमा का बीज दें
-- आवर्धक लेंस से देखें
-- चर्चा करें कि बीज के अंदर क्या है
+*Part 1: Seed Exploration (10 minutes)*
+- Give each student a bean seed
+- Use magnifying glasses to observe
+- Discuss what's inside a seed
 
-*भाग 2: जीवन चक्र के चरण (15 मिनट)*
-- चार मुख्य चरण प्रस्तुत करें:
-  1. **बीज** - बच्चे पौधे और भोजन होता है
-  2. **अंकुरण** - बीज बढ़ना शुरू करता है
-  3. **पौधा** - पहली पत्तियों वाला युवा पौधा
-  4. **वयस्क पौधा** - परिपक्व पौधा जो नए बीज बनाता है
+*Part 2: Life Cycle Stages (15 minutes)*
+- Present the four main stages:
+  1. **Seed** - Contains baby plant and food
+  2. **Germination** - Seed begins to grow
+  3. **Seedling** - Young plant with first leaves
+  4. **Adult Plant** - Mature plant that makes new seeds
 
-- छात्र अपनी कॉपी में हर चरण का चित्र बनाएं
-- अवलोकन के लिए गमलों में राजमा के बीज लगाएं
+- Students draw each stage in their notebooks
+- Plant bean seeds in pots for observation
 
-**निष्कर्ष (10 मिनट)**
-- चारों चरणों की एक साथ समीक्षा करें
-- छात्र एक नई बात साझा करें जो उन्होंने सीखी
-- गृहकार्य दें: लगाए गए बीजों का रोज अवलोकन करें
+**Conclusion (10 minutes)**
+- Review the four stages together
+- Students share one new thing they learned
+- Assign homework: Observe planted seeds daily
 
-**मूल्यांकन:**
-- जीवन चक्र चरणों के छात्र चित्रों की जांच करें
-- चर्चा के दौरान छात्र स्पष्टीकरण सुनें
-- दैनिक अवलोकन डायरी की निगरानी करें
+**Assessment:**
+- Check student drawings of life cycle stages
+- Listen to student explanations during discussion
+- Monitor daily observation journals
 
-**विस्तार गतिविधियां:**
-- कक्षा का बगीचा बनाएं
-- अलग-अलग पौधों के जीवन चक्र की तुलना करें
-- अनुसंधान करें कि पौधे हमारे पर्यावरण की कैसे मदद करते हैं
+**Extension Activities:**
+- Create a class garden
+- Compare different plant life cycles
+- Research how plants help our environment
 
-**गृहकार्य:**
-- पौधे के जीवन चक्र का चित्र बनाकर लेबल करें
-- हर चरण के बारे में एक वाक्य लिखें`,
-      grade: "कक्षा 4",
-      subject: "विज्ञान"
+**Homework:**
+- Draw and label a plant life cycle
+- Write one sentence about each stage`,
+      grade: "Grade 4",
+      subject: "Science"
     },
     audio: {
       title: "पठन प्रवाह मूल्यांकन",
@@ -550,7 +559,7 @@ Emma smiled. She was learning that everything in the garden worked together like
 
 **प्रश्न:**
 
-1. आपल्या सूर्यमालेत किती ग्रह आहेत? _______________
+1. आपल्या सूर्यमालेत कितने ग्रह आहेत? _______________
 
 2. चार अंतर्गत ग्रहांची नावे लिहा:
    अ) _____________ ब) _____________ क) _____________ ड) _____________
@@ -1105,7 +1114,7 @@ Emma smiled. She was learning that everything in the garden worked together like
 - বিভিন্ন ভগ্নাংশ দেখানোর জন্য রঙিন কাগজ ব্যবহার করুন
 - শ্রেণীকক্ষের বোর্ডে ভগ্নাংশ দেয়াল তৈরি করুন
 
-**৪. বাস্তব জীবনের উদাহরণ:**
+**৪. বাস্ত঵িক জী঵নের উদাহরণ:**
 - বন্ধুদের মধ্যে নাস্তা সমানভাবে ভাগ করা
 - রাতের খাবারের জন্য পিজ্জা ভাগ করা
 - রান্নার জন্য উপাদান পরিমাপ করা
@@ -1113,7 +1122,7 @@ Emma smiled. She was learning that everything in the garden worked together like
 **৫. ইন্টারঅ্যাক্টিভ কার্যক্রম:**
 - পাশা এবং কার্ডের সাথে ভগ্নাংশ খেলা
 - "দিনের ভগ্নাংশ" রুটিন
-- সহকর্মী শিক্ষা যেখানে ছাত্রছাত্রীরা একে অপরকে ব্যাখ্যা করে
+- সহকর্মী শিক্ষণ যেখানে ছাত্রছাত্রীরা একে অপরকে ব্যাখ্যা করে
 
 **৬. সাধারণ ভুলগুলি সমাধান করা:**
 - নিশ্চিত করুন যে ছাত্রছাত্রীরা "সমান অংশ" বোঝে
@@ -1197,7 +1206,7 @@ Emma smiled. She was learning that everything in the garden worked together like
 - বিবর্ধক কাচ দিয়ে পর্যবেক্ষণ করুন
 - বীজের ভিতরে কী আছে তা নিয়ে আলোচনা করুন
 
-*অংশ ২: জীবনচক্রের ধাপ (১৫ মিনিট)*
+*অংশ ২: জী঵নচক্রের ধাপ (১৫ মিনিট)*
 - চারটি প্রধান ধাপ উপস্থাপন করুন:
   ১. **বীজ** - শিশু উদ্ভিদ এবং খাদ্য থাকে
   ২. **অঙ্কুরোদগম** - বীজ বাড়তে শুরু করে
@@ -1283,4 +1292,3 @@ Emma smiled. She was learning that everything in the garden worked together like
 
 export type ContentLanguage = keyof typeof contentData;
 export type ContentType = keyof typeof contentData.en;
-```

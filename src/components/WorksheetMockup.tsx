@@ -132,7 +132,7 @@ export function WorksheetMockup() {
           
           {/* Action buttons */}
           <div className="flex flex-wrap gap-2">
-            <Button variant="sky" size="sm">
+            <Button variant="secondary" size="sm">
               <Printer className="w-4 h-4 mr-2" />
               Print
             </Button>
