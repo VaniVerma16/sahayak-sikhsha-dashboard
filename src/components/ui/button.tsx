@@ -19,7 +19,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         warm: "bg-gradient-to-r from-primary to-primary-glow text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300",
-        sky: "bg-secondary text-secondary-foreground shadow-md hover:shadow-lg transition-all duration-300",
+        sage: "bg-secondary text-secondary-foreground shadow-md hover:shadow-lg transition-all duration-300",
         success: "bg-success text-success-foreground shadow-md hover:bg-success/90",
         soft: "bg-accent text-accent-foreground shadow-sm hover:shadow-md transition-all duration-300 border border-accent-foreground/20",
       },

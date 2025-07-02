@@ -19,14 +19,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { translations, type Language } from "@/data/translations";
 
 const navigationItems = [
-  { id: "story", label: "Generate Story", icon: BookOpen, color: "warm" },
-  { id: "worksheet", label: "Create Worksheet", icon: FileText, color: "sky" },
-  { id: "question", label: "Ask a Question", icon: HelpCircle, color: "success" },
-  { id: "visual", label: "Visual Aids", icon: Image, color: "soft" },
-  { id: "lesson", label: "Lesson Planner", icon: Calendar, color: "warm" },
-  { id: "audio", label: "Audio Assessment", icon: Mic, color: "sky" },
+  { id: "story", icon: BookOpen, color: "warm" },
+  { id: "worksheet", icon: FileText, color: "sage" },
+  { id: "question", icon: HelpCircle, color: "success" },
+  { id: "visual", icon: Image, color: "soft" },
+  { id: "lesson", icon: Calendar, color: "warm" },
+  { id: "audio", icon: Mic, color: "sage" },
 ];
 
 const languages = [
@@ -42,8 +43,8 @@ interface SidebarProps {
   onTabChange: (tab: string) => void;
   isOpen: boolean;
   onToggle: () => void;
-  currentLanguage: string;
-  onLanguageChange: (language: string) => void;
+  currentLanguage: Language;
+  onLanguageChange: (language: Language) => void;
 }
 
 export function Sidebar({ 
@@ -55,6 +56,7 @@ export function Sidebar({
   onLanguageChange 
 }: SidebarProps) {
   const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
+  const t = translations[currentLanguage];
 
   return (
     <>
@@ -81,8 +83,8 @@ export function Sidebar({
                 <BookOpen className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">Sahayak</h1>
-                <p className="text-sm text-muted-foreground">AI Teaching Assistant</p>
+                <h1 className="text-xl font-bold text-foreground">{t.appName}</h1>
+                <p className="text-sm text-muted-foreground">{t.tagline}</p>
               </div>
             </div>
             <Button 
@@ -106,8 +108,8 @@ export function Sidebar({
               </AvatarFallback>
             </Avatar>
             <div>
-              <p className="font-medium text-foreground">Priya Teacher</p>
-              <p className="text-sm text-muted-foreground">Grade 5-8 • Marathi</p>
+              <p className="font-medium text-foreground">{t.teacherProfile.name}</p>
+              <p className="text-sm text-muted-foreground">{t.teacherProfile.grade}</p>
             </div>
           </div>
         </div>
@@ -128,7 +130,7 @@ export function Sidebar({
               {languages.map((lang) => (
                 <DropdownMenuItem 
                   key={lang.code}
-                  onClick={() => onLanguageChange(lang.code)}
+                  onClick={() => onLanguageChange(lang.code as Language)}
                   className="flex items-center space-x-2"
                 >
                   <span>{lang.flag}</span>
@@ -142,7 +144,7 @@ export function Sidebar({
         {/* Navigation */}
         <div className="p-4 space-y-2">
           <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-3">
-            Teaching Tools
+            {t.navigation.teachingTools}
           </h3>
           {navigationItems.map((item) => {
             const Icon = item.icon;
@@ -158,7 +160,7 @@ export function Sidebar({
                 onClick={() => onTabChange(item.id)}
               >
                 <Icon className="w-5 h-5" />
-                <span className="font-medium">{item.label}</span>
+                <span className="font-medium">{t.navigation[item.id as keyof typeof t.navigation]}</span>
               </Button>
             );
           })}
@@ -166,9 +168,9 @@ export function Sidebar({
 
         {/* Usage Tips */}
         <div className="p-4 m-4 bg-accent rounded-lg border">
-          <h4 className="font-medium text-accent-foreground mb-2">💡 Quick Tip</h4>
+          <h4 className="font-medium text-accent-foreground mb-2">{t.quickTip.title}</h4>
           <p className="text-sm text-accent-foreground/80">
-            Upload a textbook page image for automatic worksheet generation!
+            {t.quickTip.content}
           </p>
         </div>
       </div>

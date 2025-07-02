@@ -3,132 +3,125 @@
 @tailwind utilities;
 
 /* Sahayak Educational Dashboard Design System
-Warm, friendly colors inspired by Indian classrooms and educational environments
+Green, soothing colors inspired by nature and growth in education
 */
 
 @layer base {
   :root {
-    /* Educational warm palette */
-    --background: 42 100% 98%;
-    --foreground: 25 35% 25%;
+    /* Educational green palette */
+    --background: 120 20% 98%;
+    --foreground: 140 30% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 25 35% 25%;
+    --card-foreground: 140 30% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 35% 25%;
+    --popover-foreground: 140 30% 20%;
 
-    /* Warm orange primary - friendly and energetic */
-    --primary: 24 95% 55%;
+    /* Forest green primary - growth and nature */
+    --primary: 140 60% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 24 95% 65%;
+    --primary-glow: 140 60% 55%;
 
-    /* Sky blue secondary - calming and trustworthy */
-    --secondary: 195 85% 70%;
+    /* Sage green secondary - calming and wise */
+    --secondary: 160 40% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Cream/yellow muted tones */
-    --muted: 42 60% 95%;
-    --muted-foreground: 25 25% 45%;
+    /* Light green muted tones */
+    --muted: 120 30% 95%;
+    --muted-foreground: 140 20% 45%;
 
-    /* Light yellow accent */
-    --accent: 48 100% 88%;
-    --accent-foreground: 25 35% 25%;
+    /* Mint green accent */
+    --accent: 150 50% 88%;
+    --accent-foreground: 140 30% 20%;
 
-    /* Educational green for success */
-    --success: 142 70% 45%;
+    /* Educational emerald for success */
+    --success: 155 70% 40%;
     --success-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 42 40% 88%;
+    --border: 120 25% 88%;
     --input: 0 0% 100%;
-    --ring: 24 95% 55%;
+    --ring: 140 60% 45%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients for educational warmth */
+    /* Custom gradients for educational calm */
     --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-sky: linear-gradient(135deg, hsl(var(--secondary)), hsl(195 85% 80%));
+    --gradient-sage: linear-gradient(135deg, hsl(var(--secondary)), hsl(160 40% 70%));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
     
     /* Educational shadows */
     --shadow-warm: 0 4px 20px -4px hsl(var(--primary) / 0.15);
-    --shadow-soft: 0 2px 10px -2px hsl(25 25% 45% / 0.1);
+    --shadow-soft: 0 2px 10px -2px hsl(140 20% 45% / 0.1);
     
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-foreground: 140 30% 20%;
+    --sidebar-primary: 140 60% 45%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 120 30% 95%;
+    --sidebar-accent-foreground: 140 30% 20%;
+    --sidebar-border: 120 25% 88%;
+    --sidebar-ring: 140 60% 45%;
   }
 
   .dark {
-    /* Dark mode with warm educational tones */
-    --background: 25 20% 8%;
-    --foreground: 42 60% 95%;
+    /* Dark mode with green educational tones */
+    --background: 140 25% 8%;
+    --foreground: 120 30% 95%;
 
-    --card: 25 25% 12%;
-    --card-foreground: 42 60% 95%;
+    --card: 140 20% 12%;
+    --card-foreground: 120 30% 95%;
 
-    --popover: 25 25% 12%;
-    --popover-foreground: 42 60% 95%;
+    --popover: 140 20% 12%;
+    --popover-foreground: 120 30% 95%;
 
-    /* Softer orange for dark mode */
-    --primary: 24 85% 60%;
-    --primary-foreground: 25 20% 8%;
-    --primary-glow: 24 85% 70%;
+    /* Softer green for dark mode */
+    --primary: 140 50% 55%;
+    --primary-foreground: 140 25% 8%;
+    --primary-glow: 140 50% 65%;
 
-    /* Muted blue for dark mode */
-    --secondary: 195 75% 65%;
-    --secondary-foreground: 25 20% 8%;
+    /* Muted sage for dark mode */
+    --secondary: 160 35% 60%;
+    --secondary-foreground: 140 25% 8%;
 
-    --muted: 25 15% 15%;
-    --muted-foreground: 42 40% 65%;
+    --muted: 140 15% 15%;
+    --muted-foreground: 120 25% 65%;
 
-    --accent: 48 80% 75%;
-    --accent-foreground: 25 20% 8%;
+    --accent: 150 40% 75%;
+    --accent-foreground: 140 25% 8%;
 
-    --success: 142 60% 50%;
-    --success-foreground: 25 20% 8%;
+    --success: 155 60% 50%;
+    --success-foreground: 140 25% 8%;
 
     --destructive: 0 75% 60%;
-    --destructive-foreground: 42 60% 95%;
+    --destructive-foreground: 120 30% 95%;
 
-    --border: 25 15% 20%;
-    --input: 25 25% 12%;
-    --ring: 24 85% 60%;
+    --border: 140 15% 20%;
+    --input: 140 20% 12%;
+    --ring: 140 50% 55%;
 
     /* Update gradients for dark mode */
     --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-sky: linear-gradient(135deg, hsl(var(--secondary)), hsl(195 75% 75%));
+    --gradient-sage: linear-gradient(135deg, hsl(var(--secondary)), hsl(160 35% 70%));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
     
     --shadow-warm: 0 4px 20px -4px hsl(var(--primary) / 0.25);
-    --shadow-soft: 0 2px 10px -2px hsl(42 40% 65% / 0.15);
+    --shadow-soft: 0 2px 10px -2px hsl(120 25% 65% / 0.15);
 
-    --sidebar-background: 25 25% 10%;
-    --sidebar-foreground: 42 60% 95%;
-    --sidebar-primary: 24 85% 60%;
-    --sidebar-primary-foreground: 25 20% 8%;
-    --sidebar-accent: 25 15% 18%;
-    --sidebar-accent-foreground: 42 60% 95%;
-    --sidebar-border: 25 15% 20%;
-    --sidebar-ring: 24 85% 60%;
+    --sidebar-background: 140 20% 10%;
+    --sidebar-foreground: 120 30% 95%;
+    --sidebar-primary: 140 50% 55%;
+    --sidebar-primary-foreground: 140 25% 8%;
+    --sidebar-accent: 140 15% 18%;
+    --sidebar-accent-foreground: 120 30% 95%;
+    --sidebar-border: 140 15% 20%;
+    --sidebar-ring: 140 50% 55%;
   }
 }
 

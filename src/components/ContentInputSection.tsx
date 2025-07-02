@@ -8,6 +8,7 @@ import {
   RefreshCw, 
   Sparkles
 } from "lucide-react";
+import { translations, type Language } from "@/data/translations";
 
 interface ContentInputSectionProps {
   prompt: string;
@@ -17,6 +18,7 @@ interface ContentInputSectionProps {
   handleGenerate: () => void;
   isGenerating: boolean;
   placeholder: string;
+  currentLanguage: Language;
 }
 
 export function ContentInputSection({
@@ -26,14 +28,17 @@ export function ContentInputSection({
   handleFileUpload,
   handleGenerate,
   isGenerating,
-  placeholder
+  placeholder,
+  currentLanguage
 }: ContentInputSectionProps) {
+  const t = translations[currentLanguage];
+
   return (
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center space-x-2">
           <Sparkles className="w-5 h-5 text-primary" />
-          <span>Content Request</span>
+          <span>{t.contentRequest}</span>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -57,7 +62,7 @@ export function ContentInputSection({
             />
             <Button variant="outline" className="flex items-center space-x-2">
               <ImageIcon className="w-4 h-4" />
-              <span>Upload Images</span>
+              <span>{t.uploadImages}</span>
             </Button>
           </div>
           
@@ -71,7 +76,7 @@ export function ContentInputSection({
             />
             <Button variant="outline" className="flex items-center space-x-2">
               <Mic className="w-4 h-4" />
-              <span>Upload Audio</span>
+              <span>{t.uploadAudio}</span>
             </Button>
           </div>
           
@@ -85,7 +90,7 @@ export function ContentInputSection({
             />
             <Button variant="outline" className="flex items-center space-x-2">
               <Upload className="w-4 h-4" />
-              <span>Upload Documents</span>
+              <span>{t.uploadDocuments}</span>
             </Button>
           </div>
         </div>
@@ -93,7 +98,7 @@ export function ContentInputSection({
         {/* Uploaded Files */}
         {uploadedFiles.length > 0 && (
           <div className="space-y-2">
-            <p className="text-sm font-medium text-foreground">Uploaded Files:</p>
+            <p className="text-sm font-medium text-foreground">{t.uploadedFiles}</p>
             <div className="flex flex-wrap gap-2">
               {uploadedFiles.map((file, index) => (
                 <span key={index} className="px-3 py-1 bg-accent text-accent-foreground rounded-full text-sm">
@@ -113,12 +118,12 @@ export function ContentInputSection({
           {isGenerating ? (
             <>
               <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
-              Generating...
+              {t.generating}
             </>
           ) : (
             <>
               <Sparkles className="w-4 h-4 mr-2" />
-              Generate Content
+              {t.generateContent}
             </>
           )}
         </Button>
